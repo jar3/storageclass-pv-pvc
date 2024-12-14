@@ -99,6 +99,12 @@ Kubernetes automáticamente crea un volumen SSD y lo asigna a tu aplicación.
 ### MINIKUBE
 Minikube tiene una Storage Class llamada standard que usa el provisioner k8s.io/minikube-hostpath (crea almacenamiento local en el nodo Minikube).
 
+```
+/workspaces/storageclass-pv-pvc (main) $ k get storageclass.storage.k8s.io
+NAME                 PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+standard (default)   k8s.io/minikube-hostpath   Delete          Immediate           false                  29m
+```
+
 PVC (Usando la Storage Class por defecto):
 ```
 apiVersion: v1
