@@ -96,7 +96,7 @@ Kubernetes automáticamente crea un volumen SSD y lo asigna a tu aplicación.
 * Reclaim Policy: Define si el volumen se borra automáticamente (Delete), se conserva para limpieza manual (Retain) o se limpia y reutiliza (Recycle).
 * Volume Binding Mode: Si usas WaitForFirstConsumer, el volumen se crea en la misma zona que el pod que lo va a usar, lo cual es útil en clústeres multizona.
 
-### MINIKUBE
+### MINIKUBE (si llegaste hasta aca te haces un fork de este repo habilitas un codespace y probas todo en un entorno de pruebas)
 Minikube tiene una Storage Class llamada standard que usa el provisioner k8s.io/minikube-hostpath (crea almacenamiento local en el nodo Minikube).
 
 ```
